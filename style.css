@@ -7,29 +7,6 @@ body {
   letter-spacing: 0.5rem;
 }
 
-h1 {
-  color: teal;
-  text-align: center;
-  margin-top: 10%;
-  font-size: 3rem;
-}
-
-h3 {
-    color: white;
-    text-align: center;
-    margin-top: 50%;
-}
-
-a {
-    text-decoration: none;
-    color: teal;
-}
-
-a:hover {
-    cursor: pointer;
-    color: white;
-}
-
 iframe {
   position: fixed;
   top: 50%;
@@ -41,16 +18,5 @@ iframe {
   iframe {
     height: auto;
     max-width: 100%;
-  }
-
-  h1 {
-      font-size: 1.5rem;
-      margin-top: 25%;
-  }
-
-  h3 {
-      font-size: 0.8rem;
-      margin-top: 90%;
-      line-height: 1.5rem;
   }
 }
