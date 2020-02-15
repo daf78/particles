@@ -21,6 +21,7 @@ function draw() {
   particles.forEach((p, index) => {
     p.update();
     p.draw();
+    p.connectParticles(particles.slice(index));
   });
 }
 
@@ -56,5 +57,24 @@ class Particle {
     if (this.pos.y < 0 || this.pos.y > height) {
       this.vel.y *= -1;
     }
+  }
+
+  // Connect particles between them
+  connectParticles(particles) {
+    particles.forEach(particle => {
+      // Define the distance between particles
+      const distanceBetweenParticles = dist(
+        this.pos.x,
+        this.pos.y,
+        particle.pos.x,
+        particle.pos.y
+      );
+
+      // If the distance is less than a specific number we define, a line will be draw between the particles
+      if (distanceBetweenParticles < 120) {
+        stroke('rgba(255, 255, 255, 0.1)');
+        line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
+      }
+    });
   }
 }
