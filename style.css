@@ -3,6 +3,31 @@ body {
   padding: 0;
   overflow: hidden;
   background: rgb(29, 2, 28);
+  font-family: 'Tomorrow', sans-serif;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 3rem;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    margin-top: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+a:hover {
+    cursor: pointer;
+    color: white;
 }
 
 iframe {
