@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: teal;
   text-align: center;
   margin-top: 10%;
   font-size: 3rem;
@@ -41,5 +41,16 @@ iframe {
   iframe {
     height: auto;
     max-width: 100%;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+      margin-top: 25%;
+  }
+
+  h3 {
+      font-size: 0.8rem;
+      margin-top: 90%;
+      line-height: 1.5rem;
   }
 }
