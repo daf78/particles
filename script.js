@@ -8,16 +8,20 @@ function setup() {
   // Define how many particles to be created to appear at the same time on the screen
   const particlesLength = Math.floor(window.innerWidth / 10);
 
-  // Fill the array with all particles that it possible to create based on the width of the screen 
-  for(let i = 0; i < particlesLength; i++) {
-      particles.push(new Particle());
+  // Fill the array with all particles that it possible to create based on the width of the screen
+  for (let i = 0; i < particlesLength; i++) {
+    particles.push(new Particle());
   }
 }
 
 function draw() {
   background(29, 2, 28);
-  p.update();
-  p.draw();
+
+  // Define coordinates and draw particles for each one of the array
+  particles.forEach((p, index) => {
+    p.update();
+    p.draw();
+  });
 }
 
 class Particle {
