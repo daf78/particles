@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #cea953;
+}
+
+iframe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
